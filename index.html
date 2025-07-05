@@ -1,22 +1,87 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Golden Girls Archiv</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Gesamtschrift */
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: #fffaf7; /* cremig */
+      color: #333;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 100vh;
+      background-color: #ffd6e0; /* pastellrosa */
+      padding: 1rem;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    }
+
+    /* Sidebar Überschrift */
+    .sidebar h2 {
+      font-weight: bold;
+      color: #a83251; /* etwas dunkleres rosa */
+      margin-bottom: 1rem;
+    }
+
+    /* Sidebar Links */
+    .sidebar a {
+      display: block;
+      color: #6c3750;
+      padding: 0.5rem 0;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: #ff9fb1; /* dunkleres rosa beim hover */
+      color: #fff;
+    }
+
+    /* Hauptinhalt */
+    .main-content {
+      margin-left: 220px; /* Platz für Sidebar */
+      padding: 2rem;
+    }
+
+    /* Überschrift Hauptinhalt */
+    h1 {
+      color: #c06c84; /* rosa */
+    }
+
+    /* Zitatbox */
+    blockquote {
+      background-color: #ffe3a9;
+      border-left: 6px solid #ffbc00;
+      padding: 1rem;
+      font-style: italic;
+      margin: 1.5rem 0;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
-  <h1>🌟 Golden Girls Archiv</h1>
+  <div class="sidebar">
+    <h2>Golden Girls Wiki</h2>
+    <a href="index.html">Startseite</a>
+    <a href="charaktere/index.html">Charaktere</a>
+    <a href="fanon/kontext.html">Fanon</a>
+    <a href="folgen/index.html">Episoden</a>
+  </div>
 
-  <p>Willkommen im liebevoll gepflegten Golden Girls-Wiki!<br>
-  Hier findest du Zitate, Figurenprofile, Fanon-Hinweise und viel Kontext – in hübschem Pastell.🍰</p>
+  <div class="main-content">
+    <h1>🌟 Golden Girls Archiv</h1>
+    <p>Willkommen im liebevoll gepflegten Golden Girls-Wiki! Hier findest du Zitate, Figurenprofile, Fanon-Hinweise und viel Kontext – in hübschem Pastell. 🍰</p>
 
-  <ul>
-    <li><a href="charaktere/index.md">Charaktere</a></li>
-    <li><a href="fanon/kontext.md">Fanon</a></li>
-    <li><a href="folgen/index.md">Episoden</a></li>
-  </ul>
-
-  <blockquote>“Thank you for being a friend.”</blockquote>
+    <blockquote>“Thank you for being a friend.”</blockquote>
+  </div>
 </body>
 </html>
