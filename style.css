@@ -1,15 +1,16 @@
 body {
-  background-color: #fffaf7;
-  color: #333;
-  font-family: "Abel", sans-serif;
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 1rem;
-  line-height: 1.6;
+  background-color: #fffaf7;  /* cremiges Pastellcreme */
+  color: #333;                /* dunkles Grau für normalen Text */
+  font-family: 'Abel', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-h1, h2, h3 {
-  color: #c06c84;
+h1 {
+  color: #c06c84;             /* zartes Rosa */
+  margin-top: 0;
+}
+
 }
 
 a {
